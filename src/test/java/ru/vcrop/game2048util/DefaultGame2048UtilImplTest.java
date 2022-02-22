@@ -64,7 +64,7 @@ class DefaultGame2048UtilImplTest {
                 else if (i != 0) count_another++;
             }
         Assertions.assertTrue(count2 < 3);
-        Assertions.assertTrue(count4 < 2);
+        Assertions.assertTrue(count4 < 3);
         Assertions.assertEquals(count2 + count4, 2);
         Assertions.assertEquals(0, count_another);
     }
@@ -88,4 +88,6 @@ class DefaultGame2048UtilImplTest {
         Assertions.assertEquals(0, count_another);
         Assertions.assertTrue(game2048Util.full(matrix));
     }
+
+
 }

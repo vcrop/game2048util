@@ -54,9 +54,11 @@ public class DefaultGame2048UtilImpl implements Game2048Util {
         matrix.forEach(row -> {
                     List<Integer> elems = row.stream().filter(n -> n != 0).collect(Collectors.toList());
                     for (int i = 0; i < elems.size() - 1; i++)
-                        if (elems.get(i).equals(elems.get(i + 1)))
-                            score2048Util.onEvent(Event.MERGE,
-                                    elems.set(i, elems.get(i) + elems.remove(i + 1)));
+                        if (elems.get(i).equals(elems.get(i + 1))) {
+                            elems.set(i, elems.get(i) << 1);
+                            elems.remove(i + 1);
+                            score2048Util.onEvent(Event.MERGE, elems.get(i));
+                        }
                     IntStream.range(0, 4).forEach(n -> row.set(n, n < elems.size() ? elems.get(n) : 0));
                 }
         );
