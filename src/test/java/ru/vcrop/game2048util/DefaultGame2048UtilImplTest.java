@@ -1,17 +1,19 @@
 package ru.vcrop.game2048util;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.vcrop.game2048util.implementations.DefaultGame2048UtilImpl;
+import ru.vcrop.game2048util.implementations.DefaultScore2048UtilImpl;
 import ru.vcrop.game2048util.util.Direction;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class UtilsTest {
+class DefaultGame2048UtilImplTest {
 
     List<List<Integer>> matrix;
+    Game2048Util game2048Util = new DefaultGame2048UtilImpl(new DefaultScore2048UtilImpl());
 
     @BeforeEach
     void init() {
@@ -29,14 +31,14 @@ class UtilsTest {
 
     @Test
     void transformMatrixRight() {
-        Utils.transformMatrix(matrix, Direction.RIGHT);
+        game2048Util.transformMatrix(matrix, Direction.RIGHT);
         Assertions.assertEquals(matrix.get(1).get(3), 1);
         Assertions.assertNotEquals(matrix.get(1).get(2), 1);
     }
 
     @Test
     void transformMatrixDown() {
-        Utils.transformMatrix(matrix, Direction.DOWN);
+        game2048Util.transformMatrix(matrix, Direction.DOWN);
         Assertions.assertEquals(matrix.get(3).get(2), 1);
         Assertions.assertNotEquals(matrix.get(1).get(2), 1);
     }
@@ -44,7 +46,7 @@ class UtilsTest {
     @Test
     void transformMatrixUnion() {
         matrix.get(0).set(2, 1);
-        Utils.transformMatrix(matrix, Direction.DOWN);
+        game2048Util.transformMatrix(matrix, Direction.DOWN);
         Assertions.assertEquals(matrix.get(3).get(2), 2);
         Assertions.assertNotEquals(matrix.get(1).get(2), 1);
     }
@@ -54,7 +56,7 @@ class UtilsTest {
         int count2 = 0;
         int count4 = 0;
         int count_another = 0;
-        Utils.init(matrix);
+        game2048Util.init(matrix);
         for (List<Integer> row : matrix)
             for (int i : row) {
                 if (i == 2) count2++;
@@ -72,8 +74,8 @@ class UtilsTest {
         int count2 = 0;
         int count4 = 0;
         int count_another = 0;
-        Utils.init(matrix);
-        for (int i = 0; i < 14; i++) Utils.randomTile(matrix);
+        game2048Util.init(matrix);
+        for (int i = 0; i < 14; i++) game2048Util.randomTile(matrix);
         for (List<Integer> row : matrix)
             for (int i : row) {
                 if (i == 2) count2++;
@@ -84,6 +86,6 @@ class UtilsTest {
         Assertions.assertTrue(count4 < 17);
         Assertions.assertEquals(count2 + count4, 16);
         Assertions.assertEquals(0, count_another);
-        Assertions.assertTrue(Utils.full(matrix));
+        Assertions.assertTrue(game2048Util.full(matrix));
     }
 }

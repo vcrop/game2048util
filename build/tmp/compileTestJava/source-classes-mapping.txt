@@ -1,2 +1,2 @@
-ru/vcrop/game2048util/UtilsTest.java
- ru.vcrop.game2048util.UtilsTest
+ru/vcrop/game2048util/DefaultGame2048UtilImplTest.java
+ ru.vcrop.game2048util.DefaultGame2048UtilImplTest

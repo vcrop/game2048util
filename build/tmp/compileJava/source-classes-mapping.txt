@@ -1,4 +1,6 @@
 ru/vcrop/game2048util/util/Direction.java
  ru.vcrop.game2048util.util.Direction
-ru/vcrop/game2048util/Utils.java
- ru.vcrop.game2048util.Utils
+ru/vcrop/game2048util/DefaultGame2048UtilImpl.java
+ ru.vcrop.game2048util.DefaultGame2048UtilImpl
+ru/vcrop/game2048util/Game2048Util.java
+ ru.vcrop.game2048util.Game2048Util
