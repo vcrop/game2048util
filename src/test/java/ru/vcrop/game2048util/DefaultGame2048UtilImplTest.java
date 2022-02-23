@@ -4,11 +4,18 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.vcrop.game2048util.implementations.DefaultGame2048UtilImpl;
+import ru.vcrop.game2048util.implementations.DefaultGraphic2048UtilImpl;
 import ru.vcrop.game2048util.implementations.DefaultScore2048UtilImpl;
+import ru.vcrop.game2048util.util.ComposeMatrixScoreClass;
 import ru.vcrop.game2048util.util.Direction;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 class DefaultGame2048UtilImplTest {
 
@@ -88,6 +95,5 @@ class DefaultGame2048UtilImplTest {
         Assertions.assertEquals(0, count_another);
         Assertions.assertTrue(game2048Util.full(matrix));
     }
-
 
 }

@@ -1,48 +1,23 @@
 ru/vcrop/game2048util/implementations/DefaultGame2048UtilImpl.java
  ru.vcrop.game2048util.implementations.DefaultGame2048UtilImpl
-ru/vcrop/game2048util/implementations/tiles/DefaultTile64.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile64
-ru/vcrop/game2048util/implementations/tiles/DefaultTile0.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile0
-ru/vcrop/game2048util/implementations/DefaultGraphic2048UtilImpl.java
- ru.vcrop.game2048util.implementations.DefaultGraphic2048UtilImpl
-ru/vcrop/game2048util/implementations/tiles/DefaultTile4096.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile4096
-ru/vcrop/game2048util/implementations/tiles/DefaultTile512.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile512
-ru/vcrop/game2048util/Score2048Util.java
- ru.vcrop.game2048util.Score2048Util
-ru/vcrop/game2048util/implementations/tiles/DefaultTile4.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile4
-ru/vcrop/game2048util/implementations/tiles/DefaultAbstractTile.java
- ru.vcrop.game2048util.implementations.tiles.DefaultAbstractTile
-ru/vcrop/game2048util/implementations/tiles/DefaultTile2.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile2
-ru/vcrop/game2048util/util/Direction.java
- ru.vcrop.game2048util.util.Direction
-ru/vcrop/game2048util/implementations/tiles/DefaultTile128.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile128
-ru/vcrop/game2048util/util/TileSet.java
- ru.vcrop.game2048util.util.TileSet
 ru/vcrop/game2048util/util/Event.java
  ru.vcrop.game2048util.util.Event
-ru/vcrop/game2048util/implementations/tiles/DefaultTile16.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile16
-ru/vcrop/game2048util/implementations/tiles/DefaultTile8.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile8
 ru/vcrop/game2048util/implementations/DefaultScore2048UtilImpl.java
  ru.vcrop.game2048util.implementations.DefaultScore2048UtilImpl
-ru/vcrop/game2048util/Game2048Util.java
- ru.vcrop.game2048util.Game2048Util
-ru/vcrop/game2048util/implementations/tiles/DefaultTile32.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile32
-ru/vcrop/game2048util/implementations/tiles/DefaultTile256.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile256
-ru/vcrop/game2048util/implementations/tiles/DefaultTile1024.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile1024
-ru/vcrop/game2048util/Graphic2048Util.java
- ru.vcrop.game2048util.Graphic2048Util
-ru/vcrop/game2048util/implementations/tiles/DefaultTile2048.java
- ru.vcrop.game2048util.implementations.tiles.DefaultTile2048
+ru/vcrop/game2048util/Tile2048Util.java
+ ru.vcrop.game2048util.Tile2048Util
+ru/vcrop/game2048util/util/Direction.java
+ ru.vcrop.game2048util.util.Direction
 ru/vcrop/game2048util/util/ComposeMatrixScoreClass.java
  ru.vcrop.game2048util.util.ComposeMatrixScoreClass
+ru/vcrop/game2048util/Score2048Util.java
+ ru.vcrop.game2048util.Score2048Util
+ru/vcrop/game2048util/Game2048Util.java
+ ru.vcrop.game2048util.Game2048Util
+ru/vcrop/game2048util/Graphic2048Util.java
+ ru.vcrop.game2048util.Graphic2048Util
+ru/vcrop/game2048util/implementations/DefaultGraphic2048UtilImpl.java
+ ru.vcrop.game2048util.implementations.DefaultGraphic2048UtilImpl
+ru/vcrop/game2048util/util/DefaultGraphicTileSet.java
+ ru.vcrop.game2048util.util.DefaultGraphicTileSet
+ ru.vcrop.game2048util.util.DefaultGraphicTileSet$DefaultTile

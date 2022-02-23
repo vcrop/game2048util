@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-02-22T20:25:30" hostname="ms7599ubuntu" time="0.077">
+<testsuite name="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-02-23T08:14:58" hostname="ms7599ubuntu" time="0.086">
   <properties/>
-  <testcase name="transformMatrixRight()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.051"/>
-  <testcase name="transformMatrixUnion()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.003"/>
+  <testcase name="transformMatrixRight()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.054"/>
+  <testcase name="transformMatrixUnion()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.004"/>
   <testcase name="clearMatrix()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.002"/>
-  <testcase name="fullTilesTest()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.009"/>
-  <testcase name="transformMatrixDown()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.002"/>
+  <testcase name="fullTilesTest()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.01"/>
+  <testcase name="transformMatrixDown()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.004"/>
   <testcase name="initTest()" classname="ru.vcrop.game2048util.DefaultGame2048UtilImplTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
